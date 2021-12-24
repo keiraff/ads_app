@@ -14,6 +14,11 @@ gem "pg", "~> 1.1"
 
 gem "jquery-rails"
 
+gem 'bootstrap-sass'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '>= 6'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -36,7 +41,7 @@ gem "jbuilder", "~> 2.11"
 # gem "kredis"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-# gem "bcrypt", "~> 3.1.7"
+gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
@@ -45,7 +50,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", ">= 1.4.4", require: false
 
 # Use Sass to process CSS
-# gem "sassc-rails", "~> 2.1"
+#gem "sassc-rails", "~> 2.1"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -63,7 +68,7 @@ group :development do
   # gem "rack-mini-profiler", ">= 2.3.3"
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+  gem "spring"
 end
 
 group :test do
